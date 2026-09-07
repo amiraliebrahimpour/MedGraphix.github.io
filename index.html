@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="MedGraphix — Scientific Design Services">
+<title>MedGraphix | Scientific Design Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#020817;--p:#07142e;--t:#f7f9ff;--m:#9eabc7;--c:#16d9f5;--b:#168cff;--v:#a34fff;--l:rgba(126,163,255,.18)}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}body{font-family:Inter,Arial,sans-serif;color:var(--t);background:radial-gradient(circle at 85% 5%,rgba(22,140,255,.16),transparent 28%),radial-gradient(circle at 10% 40%,rgba(163,79,255,.11),transparent 30%),var(--bg);line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+nav{position:fixed;z-index:9;top:0;left:0;right:0;height:76px;background:rgba(2,8,23,.72);backdrop-filter:blur(16px);border-bottom:1px solid var(--l)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-weight:800}.brand img{width:44px;height:44px;object-fit:cover;border-radius:10px}.brand span{font-size:18px}.brand b{background:linear-gradient(90deg,var(--c),var(--b),var(--v));-webkit-background-clip:text;color:transparent}.links{display:flex;gap:25px;font-size:13px;color:#cbd5ec}.links a:hover{color:#fff}
+.hero{min-height:100vh;padding-top:110px;display:flex;align-items:center}.heroGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}.eyebrow{font-size:12px;letter-spacing:2.4px;text-transform:uppercase;color:var(--c);font-weight:800}h1{font-size:clamp(48px,7vw,80px);line-height:.98;letter-spacing:-4px;margin:17px 0 22px}.grad{background:linear-gradient(90deg,var(--c),var(--b),var(--v));-webkit-background-clip:text;color:transparent}.hero p{font-size:18px;color:var(--m);max-width:650px;line-height:1.85}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:14px 21px;border:1px solid var(--l);border-radius:12px;font-size:13px;font-weight:800}.primary{border:0;background:linear-gradient(100deg,var(--c),var(--b),var(--v));color:#041025}.visual{min-height:450px;display:grid;place-items:center;position:relative}.glow{position:absolute;width:390px;height:390px;border-radius:50%;background:radial-gradient(circle,rgba(22,217,245,.23),rgba(163,79,255,.1) 45%,transparent 70%)}.logo{position:relative;width:min(410px,82%);border-radius:28px;box-shadow:0 0 90px rgba(22,140,255,.15)}
+section{padding:100px 0}.head{max-width:760px;margin-bottom:40px}.head h2{font-size:42px;line-height:1.08;letter-spacing:-2px;margin:8px 0 12px}.head p,.card p{color:var(--m)}
+.about,.team,.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{background:linear-gradient(145deg,rgba(10,24,53,.84),rgba(5,13,31,.78));border:1px solid var(--l);border-radius:24px;padding:31px}.card p{line-height:1.9}.stat{display:flex;align-items:end;gap:12px;margin-top:24px}.stat strong{font-size:48px;line-height:1;background:linear-gradient(90deg,var(--c),var(--b),var(--v));-webkit-background-clip:text;color:transparent}.stat span{color:var(--m);font-size:13px}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:20px}.service{min-height:245px;position:relative;overflow:hidden}.num{font-size:11px;letter-spacing:2px;color:var(--c);font-weight:800}.service h3{font-size:23px;margin:11px 0 8px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:17px}.tag{font-size:11px;color:#c5cfe5;padding:6px 9px;border:1px solid var(--l);border-radius:99px;background:rgba(120,150,220,.07)}
+.portfolio{border:1px solid var(--l);padding:10px;border-radius:25px;background:rgba(5,13,31,.45)}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.project{min-height:220px;border:1px dashed rgba(126,163,255,.3);border-radius:18px;display:grid;place-items:center;text-align:center;color:#7f8ca8;background:rgba(10,23,50,.4)}
+.person{display:flex;align-items:center;gap:17px}.avatar{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;font-weight:800;color:#041025;background:linear-gradient(135deg,var(--c),var(--b),var(--v))}.person h3{font-size:18px}.person p{font-size:13px;color:var(--m)}
+.contactItem{padding:15px 0;border-top:1px solid var(--l);font-size:14px}.contactItem span{display:block;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--m);margin-bottom:4px}footer{border-top:1px solid var(--l);padding:30px 0;color:#7f8da9;font-size:12px}
+@media(max-width:850px){.heroGrid,.about,.team,.contact,.services{grid-template-columns:1fr}.visual{min-height:330px}.projects{grid-template-columns:1fr 1fr}.links{display:none}}@media(max-width:520px){h1{letter-spacing:-2px}.projects{grid-template-columns:1fr}section{padding:78px 0}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><a class="brand" href="#home"><img src="logo.jpg" alt="MedGraphix logo"><span>Med <b>Graphix</b></span></a><div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#team">Team</a><a href="#contact">Contact</a></div></div></nav>
+
+<section class="hero" id="home"><div class="wrap heroGrid"><div>
+<div class="eyebrow">Scientific Design Services</div><h1>Making science<br><span class="grad">visible.</span></h1>
+<p>MedGraphix creates custom scientific visuals for research and academic publications — from classical 2D figures to advanced 2D design, realistic 3D visualization and 2D &amp; 3D animation.</p>
+<div class="buttons"><a class="btn primary" href="#portfolio">Explore Portfolio</a><a class="btn" href="#contact">Discuss a Project</a></div>
+</div><div class="visual"><div class="glow"></div><img class="logo" src="logo.jpg" alt="MedGraphix — Scientific Design Services"></div></div></section>
+
+<section id="about"><div class="wrap"><div class="head"><div class="eyebrow">About us</div><h2>Scientific visualization built from the ground up.</h2><p>Clear, accurate and visually engaging communication of scientific ideas.</p></div>
+<div class="about"><div class="card"><p>MedGraphix is a scientific visualization company founded by <b>Amirali Ebrahimpour</b> and <b>Yeganeh Khazaei</b>, two undergraduate Medical Laboratory Sciences students.</p><p style="margin-top:14px">We specialize in graphical abstracts, journal figures, cover images, scientific illustration, and 2D &amp; 3D design and animation.</p></div>
+<div class="card"><p>With over 200 scientific visuals created for academic publications, all projects are custom-designed from scratch without templates or AI-generated elements.</p><div class="stat"><strong>200+</strong><span>scientific visuals<br>created for publications</span></div></div></div></div></section>
+
+<section id="services"><div class="wrap"><div class="head"><div class="eyebrow">What we offer</div><h2>Scientific Visualization Services</h2><p>Four core service areas covering publication figures, expressive illustration, realistic 3D work and scientific animation.</p></div>
+<div class="services">
+<div class="card service"><div class="num">01 / CLASSICAL 2D DESIGN</div><h3>Clear scientific illustrations</h3><p>Clear scientific illustrations and publication figures for research communication.</p><div class="tags"><span class="tag">Scientific illustration</span><span class="tag">Publication figures</span><span class="tag">Graphical abstracts</span></div></div>
+<div class="card service"><div class="num">02 / ADVANCED 2D DESIGN</div><h3>Expressive &amp; detailed visuals</h3><p>Enhanced visuals combining digital design with hand-drawn pen illustration for a more expressive and detailed outcome.</p><div class="tags"><span class="tag">Custom hand-drawn illustration</span><span class="tag">Publication-ready artwork</span></div></div>
+<div class="card service"><div class="num">03 / 3D SCIENTIFIC VISUALIZATION</div><h3>High-impact realistic communication</h3><p>Realistic scientific renderings, publication visuals and journal cover artwork.</p><div class="tags"><span class="tag">3D visualization</span><span class="tag">Scientific rendering</span><span class="tag">Journal covers</span></div></div>
+<div class="card service"><div class="num">04 / 2D &amp; 3D ANIMATION</div><h3>Science in motion</h3><p>Scientific motion graphics and high-impact 3D animations for research storytelling.</p><div class="tags"><span class="tag">Scientific motion graphics</span><span class="tag">Research visualization animation</span><span class="tag">Custom scientific animation</span><span class="tag">Publication &amp; presentation</span></div></div>
+</div></div></section>
+
+<section id="portfolio"><div class="wrap"><div class="head"><div class="eyebrow">Selected work</div><h2>Portfolio</h2><p>The portfolio area is ready for your real project images and case studies. We can replace these placeholders when you send the works.</p></div>
+<div class="portfolio"><div class="projects"><div class="project">Project 01<br>Scientific Illustration</div><div class="project">Project 02<br>Graphical Abstract</div><div class="project">Project 03<br>Journal Cover</div><div class="project">Project 04<br>3D Scientific Visualization</div><div class="project">Project 05<br>Medical Animation</div><div class="project">Project 06<br>Advanced 2D Design</div></div></div></div></section>
+
+<section id="team"><div class="wrap"><div class="head"><div class="eyebrow">The team</div><h2>MedGraphix</h2><p>A scientific visualization team combining medical-science background with visual design.</p></div>
+<div class="team"><div class="card person"><div class="avatar">AE</div><div><h3>Amirali Ebrahimpour</h3><p>Co-founder · Medical Laboratory Sciences student</p></div></div><div class="card person"><div class="avatar">YK</div><div><h3>Yeganeh Khazaei</h3><p>Co-founder · Medical Laboratory Sciences student</p></div></div></div></div></section>
+
+<section id="contact"><div class="wrap contact"><div class="card"><div class="eyebrow">Start a project</div><h2>Every project is unique.</h2><p>For pricing, timelines, and custom project quotations, please contact us directly.</p></div><div class="card">
+<div class="contactItem"><span>Phone</span>+98 937 855 1861</div><div class="contactItem"><span>Telegram</span>Telegram channel — link to be added</div><div class="contactItem"><span>Instagram</span>Instagram page — link to be added</div></div></div></section>
+<footer><div class="wrap">© 2026 MedGraphix · Scientific Design Services</div></footer>
+</body></html>
